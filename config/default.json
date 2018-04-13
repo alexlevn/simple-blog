@@ -1,0 +1,15 @@
+{
+    "server":{
+        "host":"0.0.0.0",
+        "port": 3002
+    },
+    "mysql": {
+        "host":"localhost",
+        "port":"3306",
+        "database":"blog_codeto",
+        "user":"blog",
+        "password":"khacthanh"
+    },
+    "salt": 10,
+    "secret_key":"secretkey"
+}

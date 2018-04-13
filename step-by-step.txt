@@ -1,0 +1,73 @@
+1. 
+2.
+...
+
+
+Tìm hiểu nguyên lý hash & saltround, ý nghĩa
+Bài toán đặt ra: làm sao để cho dù password giống nhau, vẫn hash ra giá trị khác nhau.
+=> sẽ so sánh bằng cách nào? hash thêm 1 lần nữa?
+
+Giải thích:
+Salt chính là chuỗi random được thêm vào để hash cùng với password, điều này đảm bảo user password hash không trùng nhau.
+
+https://crackstation.net/hashing-security.htm
+
+Bài 37: Xử lý session
+Lý do, bất kỳ ai cũng có thể vào NẾU CÓ LINK
+
+Bài 42: 
+Socket io
+
+npm install socket.io --save
+
+https://www.facebook.com/v2.10/dialog/oauth?app_id=1550669198563386&channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FNh1oH0K63yz.js%3Fversion%3D42%23cb%3Df2ae9fc239a5504%26domain%3Did.unica.vn%26origin%3Dhttps%253A%252F%252Fid.unica.vn%252Ff1e500bc0e920a4%26relation%3Dopener&client_id=1550669198563386&display=popup&domain=id.unica.vn&e2e=%7B%7D&locale=en_US&origin=1&redirect_uri=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FNh1oH0K63yz.js%3Fversion%3D42%23cb%3Df15a6f489bedb74%26domain%3Did.unica.vn%26origin%3Dhttps%253A%252F%252Fid.unica.vn%252Ff1e500bc0e920a4%26relation%3Dopener%26frame%3Df3beb51d40661&response_type=token%2Csigned_request&scope=email&sdk=joey&version=v2.10
+
+Ứng dụng xin quyền để đăng nhập facebook
+
+
+Deploy
+A. Cài DB
+1. Export database: => vào thư mục sql
+2. Lên server: git về thư mục có sql
+3. Vào mysql, tạo db;
+4. use blog_codeto;
+4. source ...path;
+
+B. Cài PM2
+Cài Đặt NodeJS trên server
+
+vào thư mục project
+1. npm install
+2. sudo npm install -g bower => bower để làm gi?
+3. bower install (cài cái gì?)
+4. sửa file config, vì bình thường chạy trên locale
+
+PM2 dùng để không chết khi gặp lỗi, restart lại ứng dụng
+5. npm install -g PM2
+6. pm2 start app.js
+7. curl localhost:3000
+
+C. Cài NGNix
+check pm2 xem đã chạy chưa
+0. pm2 list
+0. pm2 start app.js => chạy ứng dụng lên
+0. sudo apt-get update (? update cái gì?)
+
+1. update ubuntu... (?)
+2. sudo apt-get install NGNix
+3. chuyển tất cả request sang NGNix
+4. sudo vi /etc/sites-avaiable/blog
+5. server {
+    location / {
+        proxy_pass: http://localhost:3000;
+    }
+}
+
+6. sudu ln -s ...
+7. sudo service ngnix restart
+
+
+
+D. Thiết lập tên miền.
+
+
